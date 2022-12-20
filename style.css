@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top, #334173, #212c58);   
+}
+
+.mum
+{
+    margin-top: 150px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alt-taban
+{
+    background: #6072b4;
+    width: 65%;
+    height: 15px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.mum-govde
+{
+    position: absolute;
+    top: 27%;
+    background: linear-gradient(to right, white, #eee);
+    height: 40%;
+    width: 230px;
+    border-radius: 10px;
+}
+
+.cubuk
+{
+    background: brown;
+    height: 15%;
+    width: 6px;
+    z-index: -1;
+    top: 20%;
+    position: absolute;
+}
+
+.ates
+{
+    background: orange;
+    position: absolute;
+    height: 14%;
+    width: 60px;
+    top: 10%;
+    border: 2px solid rgb(243, 174, 46);
+    border-radius: 30px 700px 200px 200px;
+    box-shadow: 0 0 10px rgb(236, 163, 27), 0 0 20px rgb(231, 118, 11), 0 0 50px orange;
+    animation: ates 7s ease-in-out forwards infinite;
+}
+
+@keyframes ates {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(1deg);
+        border-radius: 700px 30px 200px 200px;
+    }
+    70% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotateZ(0deg)
+    }
+}
+
+@keyframes atess {
+    0% {
+        border-radius: 10px 50px 50px 30px;
+    }
+    50%{
+        border-radius: 100px 20px 50px 25px;
+    }
+    100% {
+        border-radius: 10px 50px 50px 30px;
+    }
+
+}
