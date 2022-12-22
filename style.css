@@ -53,9 +53,9 @@ body {
     position: absolute;
     height: 14%;
     width: 60px;
-    top: 10%;
+    top: 11%;
     border: 2px solid rgb(243, 174, 46);
-    border-radius: 30px 700px 200px 200px;
+    border-radius: 100% 400px 250px 250px;
     box-shadow: 0 0 10px rgb(236, 163, 27), 0 0 20px rgb(231, 118, 11), 0 0 50px orange;
     animation: ates 7s ease-in-out forwards infinite;
 }
@@ -63,15 +63,32 @@ body {
 @keyframes ates {
     0% {
         transform: rotateZ(0deg);
+        border-radius: 100% 400px 200px 200px;
+    }
+    20%{
+        border-radius: 290px 80% 200px 200px;
+    }
+    25% {
+        border-radius: 310px 85% 200px 200px;
+    }
+    30% {
+        border-radius: 320px 85% 200px 200px;
     }
     50% {
         transform: rotateZ(1deg);
-        border-radius: 700px 30px 200px 200px;
+        border-radius: 92% 350px 200px 200px;
+    }
+    60% {
+        border-radius: 95% 370px 200px 200px;
     }
     70% {
-        transform: rotate(-1deg);
+        transform: rotateZ(-1deg);
+    }
+    80% {
+        border-radius: 97% 400px 200px 200px;
     }
     100% {
-        transform: rotateZ(0deg)
+        transform: rotateZ(0deg);
+        border-radius: 100% 400px 200px 200px;
     }
 }
